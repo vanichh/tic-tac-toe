@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$darkened-black: rgba(0, 0, 0, 0.6);
+$animation: .3s ease;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin state {
+  &:hover {
+    border-color: black;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-color: blue;
+  }
+}
+
+
+body {
+  margin: 0;
+  @include flex;
+  min-height: 100vh;
+  font-family: "Roboto",
+    "Arial",
+    sans-serif;
+  background-color: floralwhite;
+}
+
+.container {
+  margin-top: 20px;
+  width: auto;
+}
+
+.modal {
+  @include flex;
+  visibility: hidden;
+  top: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.win {
+  @include flex-column;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fffaf0de;
+  ;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+
+  p {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.rest-2 {
+  height: 30px;
+  width: 200px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  background-color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    border-width: 2px;
+  }
+}
+
+
+table {
+  border-spacing: revert;
+  border-collapse: separate;
+
+  td {
+    padding: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    min-width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    margin: 5px;
+
+    @include state
+  }
+
+
+}
+
+.rest {
+  margin-top: 5px;
+  height: 45px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  background-color: inherit;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  padding: 0;
+
+  @include state;
+}
+
+button:active {
+  border-color: blue;
+}

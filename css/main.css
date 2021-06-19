@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: floralwhite;
+}
+
+.container {
+  margin-top: 20px;
+  width: auto;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  top: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.win {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fffaf0de;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+.win p {
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rest-2 {
+  height: 30px;
+  width: 200px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  background-color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.rest-2:hover {
+  cursor: pointer;
+  border-width: 2px;
+}
+
+table {
+  border-spacing: revert;
+  border-collapse: separate;
+}
+
+table td {
+  padding: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  min-width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 70px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+table td:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+table td:active {
+  border-color: blue;
+}
+
+.rest {
+  margin-top: 5px;
+  height: 45px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  background-color: inherit;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  padding: 0;
+}
+
+.rest:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+.rest:active {
+  border-color: blue;
+}
+
+button:active {
+  border-color: blue;
+}
+/*# sourceMappingURL=main.css.map */
